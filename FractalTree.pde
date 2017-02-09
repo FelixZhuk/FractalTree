@@ -29,4 +29,10 @@ public void drawBranches(int x,int y, double branchLength, double angle)
 		drawBranches(endX1,endY1,branchLength, angle1);		
 		drawBranches(endX2,endY2,branchLength, angle2);
 	}
-} 
+}
+public void keyTyped() {
+	if (key >= '1' && key <= '9') {
+		branchAngle = ((double)(key)) / 10;
+		redraw();
+	}
+}
